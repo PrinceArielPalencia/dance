@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+	<link rel="stylesheet" href="home.css">
+    <script src="script.js"></script>
+</head>
+<body>
+  <div class="home">
+
+        <h1>dance checker!</h1>
+        <button onclick="logout()">Logout</button>
+     
+
+    <script>
+	
+        function logout() {
+            window.location.href = "index.html";
+			
+        }
+        </script>
+
+        <h3>If-else Staments</h3>
+        <input type = "number" id = "num1">
+        <input type = "number" id = "num2">
+
+         <button type = "botton" onclick="lightbulb()">Switch</button>
+
+         <br>
+         <br>
+
+         <img id="dance" src= "pause.png";>
+
+
+     <script>
+        function lightbulb() {
+            var image = document.getElementById('dance');
+
+            let a = parseInt (document.getElementById("num1").value);
+            let b = parseInt(document.getElementById("num2").value);
+
+            let x = a + b;
+
+            if (x>= 100) {
+                image.src ="dancing.gif";
+            } else {
+                image.src ="pause.png";
+            }
+        }
+    
+        </script>
+
+<br> <br>
+
+<a href="home.html"› prev «‹ </a>
+
+
+    
+</body>
+</html>
